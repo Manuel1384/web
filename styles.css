@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1b29;
+    color: #f1f1f1;
+}
+
+/* Pantalla de bienvenida */
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('fondo.gif'); /* Fondo en GIF */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffd700;
+}
+
+.welcome-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 20px;
+}
+
+.welcome-description {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #8b0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.start-button:hover {
+    background-color: #6a0dad;
+}
+
+/* Contenido principal (oculto al principio) */
+#main-content {
+    display: none;
+}
+
+/* Encabezado */
+header {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px; /* Tamaño específico solo para el logo */
+    margin-right: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Secciones de contenido */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Servicios */
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #33334d;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px; /* Tamaño uniforme para los servicios */
+    text-align: center;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
